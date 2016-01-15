@@ -1,0 +1,23 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.1)
+
+PROJECT(je_randgen_lrmf)
+
+# Eigen3
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
+FIND_PACKAGE(Eigen3 REQUIRED)
+include_directories("${EIGEN3_INCLUDE_DIR}")
+
+# C++11
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED on)
+
+set(SOURCES
+  RandGen/io.cpp
+  RandGen/main.cpp
+  RandGen/options.cpp
+  RandGen/parser.cpp
+)
+
+# LRMF
+ADD_EXECUTABLE(je_randgen_lrmf ${SOURCES})
+# TARGET_LINK_LIBRARIES(je_randgen_lrmf ${CERES_LIBRARIES})
