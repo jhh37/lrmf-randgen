@@ -1,6 +1,6 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.1)
 
-PROJECT(je_randgen_lrmf)
+PROJECT(lrmf_randgen)
 
 # Eigen3
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
@@ -19,5 +19,5 @@ set(SOURCES
 )
 
 # LRMF
-ADD_EXECUTABLE(je_randgen_lrmf ${SOURCES})
-# TARGET_LINK_LIBRARIES(je_randgen_lrmf ${CERES_LIBRARIES})
+ADD_EXECUTABLE(lrmf_randgen_exec ${SOURCES})
+
