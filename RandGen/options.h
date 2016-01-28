@@ -2,6 +2,7 @@
 #define _options_H_
 
 #include <string>
+#include <ctime>
 
 /*
 * (STRUCT) options: Experiment options and parameters
