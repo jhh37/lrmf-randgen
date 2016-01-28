@@ -19,7 +19,7 @@ typedef struct options {
   int m = 0;                      // Number of rows
   int n = 0;                      // Number of columns
   int r = 0;                      // Rank of V
-  int seed = time(0);                   // Random seed
+  int seed = (int)time(0);                   // Random seed
 
   bool DISPLAY = true;            // Flag for displaying the output thoroughly
   bool DEBUG = false;             // Flag for showing debug information

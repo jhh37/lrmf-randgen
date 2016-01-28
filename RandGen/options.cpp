@@ -13,7 +13,7 @@ void options::reset() {
   m = 0;          // Number of rows
   n = 0;          // Number of columns
   r = 0;          // Rank of V
-  seed = time(0);       // Seed number
+  seed = (int)time(0);       // Seed number
   
   DEBUG = false;  // Flag for showing debug information
   HELP = false;   // Flag for showing whether the experiment options are sufficient.
