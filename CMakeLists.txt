@@ -22,4 +22,4 @@ set(SOURCES
 ADD_EXECUTABLE(lrmf_randgen_exec ${SOURCES})
 
 # Install command
-INSTALL(TARGETS lrmf_randgen_exec DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
+INSTALL(TARGETS lrmf_randgen_exec DESTINATION ${CMAKE_INSTALL_PREFIX})
